@@ -21,25 +21,6 @@ AddEventHandler('chatMessage', function(id, name, msg)
         end
     end
 end)
---[[
-AddEventHandler('chatMessage', function(id, name, msg)
-    local args = stringsplit(msg, ' ')
-    local cmd = table.remove(args, 1)
-
-    if (cmd == "/crash") then
-        local pid = table.remove(args, 1)
-        if (pid ~= nil) then
-
-            TriggerClientEvent("es_admin:crash", pid)
-            --exports["AspireRPV2_DoorLocks"]:GivePlayerAccessToDoors(tonumber(pid))
-
-            else
-
-            TriggerClientEvent('chatMessage', source, '^1Prison Break', { 0, 0, 0 }, 'You need to enter a players serverID!')
-
-        end
-    end
-end)--]]
 AddEventHandler('chatMessage', function(id, name, msg)
     local args = stringsplit(msg, ' ')
     local cmd = table.remove(args, 1)
