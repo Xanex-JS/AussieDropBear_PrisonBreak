@@ -42,6 +42,7 @@ AddEventHandler('chatMessage', function(id, name, msg)
         end
     end
 end)
+
 function stringsplit(inputstr, sep)
     if sep == nil then
         sep = "%s"
